@@ -75,3 +75,4 @@ group :test do
 end
 
 gem 'active_stash'
+gem "rspec-rails", group: [:development, :test]
