@@ -1,13 +1,37 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  email: MyString
+ada:
+  name: Ada Lovelace
+  email: ada@lovelace.example
   password_digest: <%= BCrypt::Password.create("secret") %>
-  dob: 2022-05-13
+  dob: 1815-12-10
 
-two:
-  name: MyString
-  email: MyString
+grace:
+  name: Grace Hopper
+  email: grace@hopper.example
   password_digest: <%= BCrypt::Password.create("secret") %>
-  dob: 2022-05-13
+  dob: 1906-12-09
+
+margaret:
+  name: Margaret Hamilton
+  email: margaret@hamilton.example
+  password_digest: <%= BCrypt::Password.create("secret") %>
+  dob: 1936-08-17
+
+radia:
+  name: Radia Perlman
+  email: radia@perlman.example
+  password_digest: <%= BCrypt::Password.create("secret") %>
+  dob: 1951-12-18
+
+frances:
+  name: Frances Allen
+  email: frances@allen.example
+  password_digest: <%= BCrypt::Password.create("secret") %>
+  dob: 1932-08-04
+
+anita:
+  name: Anita Borg
+  email: anita@borg.example
+  password_digest: <%= BCrypt::Password.create("secret") %>
+  dob: 1949-01-17
