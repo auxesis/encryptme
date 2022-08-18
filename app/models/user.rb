@@ -1,6 +1,9 @@
 class User < ApplicationRecord
   has_secure_password
   include ActiveStash::Search
-  stash_index :name, :email, :dob
-  encrypts :name, :email, :dob
+  attribute :dob, :date
+  stash_index :name, :email
+  stash_index :dob, only: :range
+  stash_index :title, :gender, only: :exact
+  encrypts :name, :email, :gender, :title
 end

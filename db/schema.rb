@@ -15,12 +15,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_07_125505) do
     t.string "name"
     t.string "email"
     t.string "password_digest"
-    t.string "dob"
+    t.string "gender"
+    t.string "title"
+    t.date "dob"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "stash_id"
     t.string "users"
+    t.string "postcode"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["stash_id"], name: "index_users_on_stash_id"
   end
+
 end

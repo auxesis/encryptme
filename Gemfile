@@ -65,6 +65,7 @@ group :development do
   gem "wirble"
   gem "pry"
   gem "rufo"
+  gem "faker"
 end
 
 group :test do
